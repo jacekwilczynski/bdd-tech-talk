@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Shopware\Development;
+namespace App;
 
 class HttpKernel extends \Shopware\Core\HttpKernel
 {

@@ -2,7 +2,7 @@
 
 use Composer\InstalledVersions;
 use Shopware\Core\Framework\Plugin\KernelPluginLoader\StaticKernelPluginLoader;
-use Shopware\Development\Kernel;
+use App\Kernel;
 use Symfony\Component\Dotenv\Dotenv;
 
 $autoLoadFile = __DIR__ . '/../../vendor/autoload.php';

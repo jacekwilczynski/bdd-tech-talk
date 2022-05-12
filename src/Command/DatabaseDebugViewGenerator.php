@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shopware\Development\Command;
+namespace App\Command;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Types\BinaryType;

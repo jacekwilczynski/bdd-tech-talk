@@ -1,6 +1,6 @@
 <?php
 
-use Shopware\Development\Kernel;
+use App\Kernel;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Dotenv\Dotenv;

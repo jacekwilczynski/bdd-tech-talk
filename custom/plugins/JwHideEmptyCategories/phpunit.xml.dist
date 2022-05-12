@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" backupGlobals="false" backupStaticAttributes="false"
+         colors="true" bootstrap="tests/TestBootstrap.php"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+    <coverage>
+        <include>
+            <directory suffix=".php">./src</directory>
+        </include>
+        <exclude>
+            <directory suffix=".php">./src/Resources</directory>
+            <file>./src/JwHideEmptyCategories.php</file>
+        </exclude>
+        <report>
+            <php outputFile="build/phpunit/coverage.cov"/>
+        </report>
+    </coverage>
+    <php>
+        <env name="KERNEL_CLASS" value="App\Kernel"/>
+        <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak"/>
+    </php>
+    <testsuites>
+        <testsuite name="integration">
+            <directory>tests/Integration/</directory>
+        </testsuite>
+        <testsuite name="full">
+            <directory>tests/</directory>
+        </testsuite>
+    </testsuites>
+    <logging/>
+</phpunit>

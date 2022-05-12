@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Shopware\Development\Analyze\Test\PHPStan\Rules\Decoratable;
+namespace App\Analyze\Test\PHPStan\Rules\Decoratable;
 
 use PHPStan\Rules\Rule;
 use PHPStan\Testing\RuleTestCase;
-use Shopware\Development\Analyze\PHPStan\Rules\Decoratable\DecoratableNotInstantiatedRule;
+use App\Analyze\PHPStan\Rules\Decoratable\DecoratableNotInstantiatedRule;
 
 class DecoratableNotInstantiatedRuleTest extends RuleTestCase
 {
@@ -14,7 +14,7 @@ class DecoratableNotInstantiatedRuleTest extends RuleTestCase
             __DIR__ . '/_fixtures/DecoratableNotInstantiated/Test.php',
         ], [
             [
-                'The service "Shopware\Development\Analyze\Test\PHPStan\Rules\Decoratable\_fixtures\DecoratableNotInstantiated\DecoratableClass" is marked as "@Decoratable", but is instantiated, use constructor injection via the DIC instead.',
+                'The service "App\Analyze\Test\PHPStan\Rules\Decoratable\_fixtures\DecoratableNotInstantiated\DecoratableClass" is marked as "@Decoratable", but is instantiated, use constructor injection via the DIC instead.',
                 9,
             ],
         ]);

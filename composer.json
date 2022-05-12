@@ -39,7 +39,12 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Shopware\\Development\\": "src/"
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Test\\": "tests/"
         }
     },
     "require": {
@@ -56,24 +61,25 @@
     "require-dev": {
         "ext-tokenizer": "*",
         "ext-xmlwriter": "*",
-        "maltyxx/images-generator": "1.0.0",
         "brianium/paratest": "^6.2",
         "dms/phpunit-arraysubset-asserts": "^0.2.1",
         "fakerphp/faker": "1.14.1",
         "johnkary/phpunit-speedtrap": "3.3.0",
         "league/flysystem-memory": "1.0.2",
+        "maltyxx/images-generator": "1.0.0",
         "mbezhanov/faker-provider-collection": "2.0.1",
         "nikic/php-parser": "4.10.4",
         "opis/json-schema": "1.0.19",
+        "phpspec/prophecy-phpunit": "^2.0",
         "phpunit/php-code-coverage": "9.2.5",
         "phpunit/phpunit": "9.5.2",
         "smalot/pdfparser": "0.14.0",
         "symfony/browser-kit": "~4.4.4 || ~5.2.3 || ~5.3.0 || ~5.4.0",
         "symfony/dependency-injection": "~4.4.4 || ~5.2.3 || ~5.3.0 || ~5.4.0",
+        "symfony/dom-crawler": "~4.4.4 || ~5.2.3 || ~5.3.0 || ~5.4.0",
         "symfony/phpunit-bridge": "~4.4.4 || ~5.2.3 || ~5.3.0 || ~5.4.0",
         "symfony/stopwatch": "~4.4.4 || ~5.2.3 || ~5.3.0 || ~5.4.0",
         "symfony/var-dumper": "~4.4.4 || ~5.2.3 || ~5.3.0 || ~5.4.0",
-        "symfony/web-profiler-bundle": "~4.4.4 || ~5.2.3 || ~5.3.0 || ~5.4.0",
-        "symfony/dom-crawler": "~4.4.4 || ~5.2.3 || ~5.3.0 || ~5.4.0"
+        "symfony/web-profiler-bundle": "~4.4.4 || ~5.2.3 || ~5.3.0 || ~5.4.0"
     }
 }

@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Shopware\Development\Analyze\PHPStan\Rules;
+namespace App\Analyze\PHPStan\Rules;
 
 use PHPStan\Reflection\ClassReflection;
 

@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Shopware\Development\Analyze\PHPStan\Rules\Decoratable;
+namespace App\Analyze\PHPStan\Rules\Decoratable;
 
 use PhpParser\Node;
 use PhpParser\Node\Stmt\Class_;
@@ -8,7 +8,7 @@ use PHPStan\Analyser\Scope;
 use PHPStan\Broker\Broker;
 use PHPStan\Reflection\ClassReflection;
 use PHPStan\Rules\Rule;
-use Shopware\Development\Analyze\PHPStan\Rules\AnnotationBasedRuleHelper;
+use App\Analyze\PHPStan\Rules\AnnotationBasedRuleHelper;
 
 class DecoratableImplementsInterfaceRule implements Rule
 {

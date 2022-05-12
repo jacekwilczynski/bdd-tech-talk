@@ -13,8 +13,6 @@
 /config/packages/local.yaml
 /config/packages/local.yml
 
-/custom/*
-
 /build/*
 !/build/artifacts/.gitkeep
 !/build/media/.gitkeep
@@ -66,6 +64,8 @@ chromedriver.log
 ###> phpunit/phpunit ###
 /phpunit.xml
 ###< phpunit/phpunit ###
+
+.phpunit.result.cache
 
 ### misc
 .DS_Store

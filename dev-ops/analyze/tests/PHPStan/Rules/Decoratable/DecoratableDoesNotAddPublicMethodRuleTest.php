@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Shopware\Development\Analyze\Test\PHPStan\Rules\Decoratable;
+namespace App\Analyze\Test\PHPStan\Rules\Decoratable;
 
 use PHPStan\Rules\Rule;
 use PHPStan\Testing\RuleTestCase;
-use Shopware\Development\Analyze\PHPStan\Rules\Decoratable\DecoratableDoesNotAddPublicMethodRule;
+use App\Analyze\PHPStan\Rules\Decoratable\DecoratableDoesNotAddPublicMethodRule;
 
 class DecoratableDoesNotAddPublicMethodRuleTest extends RuleTestCase
 {
@@ -14,7 +14,7 @@ class DecoratableDoesNotAddPublicMethodRuleTest extends RuleTestCase
             __DIR__ . '/_fixtures/DecoratableDoesNotAddPublicMethod/DecoratableAddPublicMethod.php',
         ], [
             [
-                'The service "Shopware\Development\Analyze\Test\PHPStan\Rules\Decoratable\_fixtures\DecoratableDoesNotAddPublicMethod\DecoratableAddPublicMethod" is marked as "@Decoratable", but adds public method "build", that is not defined by any Interface.',
+                'The service "App\Analyze\Test\PHPStan\Rules\Decoratable\_fixtures\DecoratableDoesNotAddPublicMethod\DecoratableAddPublicMethod" is marked as "@Decoratable", but adds public method "build", that is not defined by any Interface.',
                 20,
             ],
         ]);

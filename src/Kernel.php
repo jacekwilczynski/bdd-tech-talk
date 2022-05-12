@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shopware\Development;
+namespace App;
 
 use Doctrine\DBAL\Connection;
 use Shopware\Core\Framework\Plugin\KernelPluginLoader\KernelPluginLoader;

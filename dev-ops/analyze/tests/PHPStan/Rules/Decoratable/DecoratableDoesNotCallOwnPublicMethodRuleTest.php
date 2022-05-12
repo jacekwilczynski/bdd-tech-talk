@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Shopware\Development\Analyze\Test\PHPStan\Rules\Decoratable;
+namespace App\Analyze\Test\PHPStan\Rules\Decoratable;
 
 use PHPStan\Rules\Rule;
 use PHPStan\Testing\RuleTestCase;
-use Shopware\Development\Analyze\PHPStan\Rules\Decoratable\DecoratableDoesNotCallOwnPublicMethodRule;
+use App\Analyze\PHPStan\Rules\Decoratable\DecoratableDoesNotCallOwnPublicMethodRule;
 
 class DecoratableDoesNotCallOwnPublicMethodRuleTest extends RuleTestCase
 {
@@ -14,7 +14,7 @@ class DecoratableDoesNotCallOwnPublicMethodRuleTest extends RuleTestCase
             __DIR__ . '/_fixtures/DecoratableDoesNotCallOwnPublicMethod/DecoratableDoesCallOwnPublicMethod.php',
         ], [
             [
-                'The service "Shopware\Development\Analyze\Test\PHPStan\Rules\Decoratable\_fixtures\DecoratableDoesNotCallOwnPublicMethod\DecoratableDoesCallOwnPublicMethod" is marked as "@Decoratable", but calls it\'s own public method "build", which breaks decoration.',
+                'The service "App\Analyze\Test\PHPStan\Rules\Decoratable\_fixtures\DecoratableDoesNotCallOwnPublicMethod\DecoratableDoesCallOwnPublicMethod" is marked as "@Decoratable", but calls it\'s own public method "build", which breaks decoration.',
                 14,
             ],
         ]);

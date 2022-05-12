@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Shopware\Development\Analyze\Test\PHPStan\Rules\Decoratable;
+namespace App\Analyze\Test\PHPStan\Rules\Decoratable;
 
 use PHPStan\Rules\Rule;
 use PHPStan\Testing\RuleTestCase;
-use Shopware\Development\Analyze\PHPStan\Rules\Decoratable\DecoratableImplementsInterfaceRule;
+use App\Analyze\PHPStan\Rules\Decoratable\DecoratableImplementsInterfaceRule;
 
 class DecoratableImplementsInterfaceRuleTest extends RuleTestCase
 {
@@ -15,7 +15,7 @@ class DecoratableImplementsInterfaceRuleTest extends RuleTestCase
             __DIR__ . '/_fixtures/DecoratableImplementsInterface/DecoratableDoesNotImplementInterface.php',
         ], [
             [
-                'The service "Shopware\Development\Analyze\Test\PHPStan\Rules\Decoratable\_fixtures\DecoratableImplementsInterface\DecoratableDoesNotImplementInterface" is marked as "@Decoratable", but does not implement an interface.',
+                'The service "App\Analyze\Test\PHPStan\Rules\Decoratable\_fixtures\DecoratableImplementsInterface\DecoratableDoesNotImplementInterface" is marked as "@Decoratable", but does not implement an interface.',
                 10,
             ],
         ]);

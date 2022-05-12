@@ -7,19 +7,22 @@
     <coverage/>
     <php>
         <ini name="error_reporting" value="-1" />
-        <server name="KERNEL_CLASS" value="Shopware\Development\Kernel"/>
+        <server name="KERNEL_CLASS" value="App\Kernel"/>
         <env name="APP_ENV" value="test" />
         <env name="APP_DEBUG" value="1" />
         <env name="APP_SECRET" value="s$cretf0rt3st" />
         <env name="SHELL_VERBOSITY" value="-1" />
         <!--To see the full stackTrace of a Deprecation set the value to a regex matching the deprecation warning-->
         <!--https://symfony.com/doc/current/components/phpunit_bridge.html#display-the-full-stack-trace-->
-        <!--<env name="SYMFONY_DEPRECATIONS_HELPER" value="/.*QueueConsumerInterface.*/" />-->
+        <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak" />
     </php>
 
     <testsuites>
-        <testsuite name="Development">
-            <directory>./tests/</directory>
+        <testsuite name="integration">
+            <directory>./tests/Integration</directory>
+        </testsuite>
+        <testsuite name="unit">
+            <directory>./tests/Unit</directory>
         </testsuite>
     </testsuites>
 

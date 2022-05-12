@@ -4,12 +4,12 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="Shopware\Development\Command\DatabaseDebugViewGenerator">
+        <service id="App\Command\DatabaseDebugViewGenerator">
             <argument type="service" id="Doctrine\DBAL\Connection" />
             <tag name="console.command"/>
         </service>
 
-        <service id="Shopware\Development\Command\ConfigDebugCommand">
+        <service id="App\Command\ConfigDebugCommand">
             <argument type="service" id="kernel"/>
             <tag name="console.command"/>
         </service>

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shopware\Development\Command;
+namespace App\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\ArrayInput;
