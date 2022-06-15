@@ -12,10 +12,10 @@ class MoneyTest extends TestCase
     /** @test */
     public function canAddMoney(): void
     {
-        $a = Money::fromFloat(10.00);
-        $b = Money::fromFloat(1.23);
+        $a = Money::fromFloat(0.1);
+        $b = Money::fromFloat(0.2);
         $sum = $a->add($b);
 
-        self::assertEqualsWithDelta(11.23, $sum->toFloat(), 0.0000000000000000000001);
+        self::assertEqualsWithDelta(0.3, $sum->toFloat(), 0.0000000000000000000001);
     }
 }
